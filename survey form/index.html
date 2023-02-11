@@ -1,0 +1,175 @@
+    <!DOCTYPE html>
+    <html lanf="en">
+        <div class="container">
+    <head class="header">
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="widht=device-width, initial-scale=1.0"/>
+        <link href="style.css" rel="stylesheet"/>
+        <title>Survey form</title>
+        <h1 id="title" class="text-centre">MKSSS's Cummins College of Engineering for Women, Pune</h1>
+        <p id="description" class="description text-centre">Thankyou for taking out your precious time. Your responses will help us improving our college facilities.</p>
+    </head>
+        <form id="survey-form">
+            <div class="form-group">
+
+        <label id="name-label" for="name">Name: </label>
+        
+        <input id="name" type="text" name="name" class="form-control" placeholder="Enter your name" required/>
+        </div>
+        <div class="form-group">
+        <label id="email-label" for="email">Email: </label>
+        <input id="email" type="email" name="email" class="form-control" placeholder="Enter your email" required/><br>
+            </div>
+            <div class="form-group">
+        <label id="number-label" for="number">Age:<span class="clue">(optional)</span> </label>
+        <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age"/>
+        </div>
+        <div class="form-group">
+            <p>Your experience with the college:</p>
+            <select id="dropdown" name="role" class="form-control" required>
+                <option disabled selected value>Select role</option>
+                <option value="student">Current Student</option>
+                <option vlaue="job">Alumini</option>
+                <option value="learner">Faculty</option>
+                <option value="preferNo">Prefer not to say</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <p>Give rating to facilities provided by us:</p>
+            <label>
+                <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked>Excellent
+            </label>
+            <label>
+            <input name="user-recommend" value="maybe" type="radio" class="input-radio">Need improvement</label>
+            <label
+            ><input name="user-recommend" value="not-sure" type="radio"class="input-radio"/>Very poor</label>
+        </div>
+        <div class="form-group">
+            <p>
+            What is your favorite thing about our college?
+            </p>
+            <select id="most-like" name="mostLike" class="form-control" required>
+            <option disabled selected value>Select an option</option>
+            <option value="challenges">Academics</option>
+            <option value="projects">Co-curricular activities</option>
+            <option value="community">Placements</option>
+            <option value="openSource">Campus</option>
+            </select>
+        </div>
+    
+        <div class="form-group">
+            <p>
+            What would you like to see improved?
+            <span class="clue">(Check all that apply)</span>
+            </p>
+    
+            <label
+            ><input
+                name="prefer"
+                value="front-end-projects"
+                type="checkbox"
+                class="input-checkbox"
+            />Faculty teachers</label
+            >
+            <label>
+            <input
+                name="prefer"
+                value="back-end-projects"
+                type="checkbox"
+                class="input-checkbox"
+            />Management</label
+            >
+            <label
+            ><input
+                name="prefer"
+                value="data-visualization"
+                type="checkbox"
+                class="input-checkbox"
+            />Courses</label
+            >
+            <label
+            ><input
+                name="prefer"
+                value="challenges"
+                type="checkbox"
+                class="input-checkbox"
+            />Infrastructure</label
+            >
+            <label
+            ><input
+                name="prefer"
+                value="open-source-community"
+                type="checkbox"
+                class="input-checkbox"
+            />College communities</label
+            >
+            <label
+            ><input
+                name="prefer"
+                value="gitter-help-rooms"
+                type="checkbox"
+                class="input-checkbox"
+            />Fees</label
+            >
+            <label
+            ><input
+                name="prefer"
+                value="videos"
+                type="checkbox"
+                class="input-checkbox"
+            />Co-aid</label
+            >
+            <label
+            ><input
+                name="prefer"
+                value="city-meetups"
+                type="checkbox"
+                class="input-checkbox"
+            />Events</label
+            >
+            <label
+            ><input
+                name="prefer"
+                value="wiki"
+                type="checkbox"
+                class="input-checkbox"
+            />Timings</label
+            >
+            <label
+            ><input
+                name="prefer"
+                value="forum"
+                type="checkbox"
+                class="input-checkbox"
+            />Location</label
+            >
+            <label
+            ><input
+                name="prefer"
+                value="additional-courses"
+                type="checkbox"
+                class="input-checkbox"
+            />Uniform</label
+            >
+        </div>
+    
+        <div class="form-group">
+            <p>Any comments or suggestions?</p>
+            <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comment here..."
+            ></textarea>
+        </div>
+    
+        <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+            Submit
+            </button>
+        </div>
+        </form>
+    </div>
+    
+    </html>
